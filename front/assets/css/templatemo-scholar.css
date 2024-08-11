@@ -879,7 +879,7 @@ Services Style
 
 .services .service-item {
   position: relative;
-  margin-top: 95px;
+  margin-top: 65px;
 }
 
 .services .service-item .icon {
@@ -902,10 +902,10 @@ Services Style
 
 .services .service-item .main-content {
   border-radius: 25px;
-  padding: 80px 30px 68px 30px;
+  padding: 60px 30px 50px 30px;
   background-color: #f1f0fe;
   margin-bottom: 30px;
-  margin-right: 50px;
+  margin-right: 0px;
   transition: all .4s;
 }
 
@@ -2217,3 +2217,126 @@ highlights
       transform: translateY(15px); /* 20pxから15pxに変更 */
   }
 }
+
+
+/* レスポンシブ対応のための追加スタイル */
+@media (max-width: 767px) {
+  /* 攻略のポイントセクションの配置を逆にする */
+  .about-us .container {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  
+  .about-us .section-heading {
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  
+  /* FAQセクションの配置を逆にする */
+  .about-us#faq .container {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  
+  .about-us#faq .section-heading {
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  
+  /* その他のレスポンシブ調整 */
+  .main-banner .item {
+      padding: 80px 30px 120px 30px;
+  }
+  
+  .main-banner .item h2 {
+      font-size: 28px;
+      line-height: 1.4;
+  }
+  
+  .events_item {
+      margin-bottom: 30px;
+  }
+  
+  .team-member {
+      margin-bottom: 60px;
+  }
+  
+  .contact-us-content {
+      margin-top: 40px;
+  }
+}
+
+/* タブレット向けの調整 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-banner .item h2 {
+      font-size: 32px;
+  }
+  
+  .events_item {
+      margin-bottom: 30px;
+  }
+  
+  .team-member {
+      margin-bottom: 60px;
+  }
+}
+
+/* レスポンシブ対応のための追加スタイル */
+@media (max-width: 767px) {
+  /* 既存のスタイル... */
+
+  /* Webテスト対策セクションのレイアウト調整 */
+  .web-test-items > .col-lg-6 {
+      margin-bottom: 30px;
+  }
+
+  .web-test-items .service-item {
+      height: 100%;
+  }
+
+  .web-test-items .animate-box {
+      margin-bottom: 30px;
+  }
+}
+
+/* タブレット向けの調整 */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 既存のスタイル... */
+
+  /* Webテスト対策セクションのレイアウト調整 */
+  .web-test-items .service-item {
+      height: 100%;
+  }
+
+  .web-test-items .animate-box {
+      margin-bottom: 30px;
+  }
+}
+
+/* PC版のレイアウト維持 */
+@media (min-width: 992px) {
+  .web-test-items {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .web-test-items > .col-lg-6 {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .web-test-items .row {
+      flex: 1;
+      display: flex;
+  }
+
+  .web-test-items .animate-box {
+      display: flex;
+      flex: 1;
+  }
+
+  .web-test-items .service-item {
+      height: 100%;
+  }
+}
+
