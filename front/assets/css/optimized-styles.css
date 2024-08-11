@@ -1,0 +1,79 @@
+/* 全体的なスタイルの最適化 */
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ヘッダーの最適化 */
+.header-area .main-nav .logo h1 {
+  font-size: 24px;
+  white-space: nowrap;
+}
+
+/* CTAボタンのスタイル */
+.cta-button {
+  background-color: white;
+  color: #7a6ad8 !important;
+  padding: 0px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #7a6ad8;
+  color:white;
+  transform: scale(1.05);
+}
+
+/* メインバナーの最適化 */
+.main-banner .item h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* パルセートアニメーション */
+@keyframes pulsate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.pulsate {
+  animation: pulsate 2s infinite;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 991px) {
+  .header-area .main-nav .logo h1 {
+      font-size: 20px;
+  }
+
+  .main-banner .item h2 {
+      font-size: 28px;
+  }
+
+  .services .service-item {
+      margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area .main-nav .logo h1 {
+      font-size: 18px;
+  }
+
+  .main-banner .item h2 {
+      font-size: 24px;
+  }
+
+  .main-banner .item {
+      padding: 80px 30px;
+  }
+
+  .services .service-item .icon {
+      width: 140px;
+      height: 140px;
+      line-height: 140px;
+  }
+}
