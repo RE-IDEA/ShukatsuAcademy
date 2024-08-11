@@ -581,6 +581,35 @@
                                     </div>
                                 </div>
                             </form>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    const form = document.getElementById('contact-form');
+                                    if (form) {
+                                        form.addEventListener('submit', function(e) {
+                                            e.preventDefault();
+
+                                            const name = document.getElementById('name').value;
+                                            const email = document.getElementById('email').value;
+                                            const message = document.getElementById('message').value;
+
+                                            // ここでPOSTリクエストを送信する処理を実装
+                                            fetch('https://api.shukatsu-academy.com', {
+                                                method: 'POST',
+                                                headers: {
+                                                    'Content-Type': 'application/json',
+                                                },
+                                                body: JSON.stringify({name: name, email:email, message:message})
+                                            })
+                                            .then(response => {
+                                                if(response.status === 200) alert('送信が完了しました。');
+                                                else alert('送信中にエラーが発生しました。');
+                                            })
+                                        });
+                                    } else {
+                                        console.error("フォーム要素が見つかりません");
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -599,7 +628,7 @@
         <script>
             new WOW().init();
         </script>
-    
+        
     <script>
       $(document).ready(function() {
         $('.owl-banner').owlCarousel({
