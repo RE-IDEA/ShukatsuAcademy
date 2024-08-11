@@ -883,8 +883,8 @@ Services Style
 }
 
 .services .service-item .icon {
-  width: 190px;
-  height: 190px;
+  width: 170px;
+  height: 170px;
   display: inline-block;
   text-align: center;
   line-height: 190px;
@@ -892,7 +892,7 @@ Services Style
   border-radius: 50%;
   position: absolute;
   right: 0;
-  top: -95px;
+  top: -75px;
 }
 
 .services .service-item .icon img {
@@ -1218,7 +1218,9 @@ Team Style
 
 .team {
   margin-top: -50px;
-    padding-top: 0px;
+  margin-right: 60px;
+  margin-left:60px;
+  padding-top: 0px;
 }
 
 .team-member {
@@ -2184,5 +2186,34 @@ highlights
 @media (max-width: 576px) {
   .animate-box {
       transform: translateY(50px);
+  }
+}
+.animate-box {
+  opacity: 0;
+  transform: translateY(30px); /* 50pxから30pxに変更 */
+  transition: all 1.0s ease-out; /* 0.5sから0.4sに変更 */
+}
+
+.animate-box.show-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* サービスアイテム用の追加スタイル */
+.services .service-item,
+.team-member .main-content,
+.highlights-item {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .animate-box {
+      transform: translateY(20px); /* 30pxから20pxに変更 */
+  }
+}
+
+@media (max-width: 576px) {
+  .animate-box {
+      transform: translateY(15px); /* 20pxから15pxに変更 */
   }
 }
