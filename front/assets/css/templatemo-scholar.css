@@ -1765,6 +1765,14 @@ footer p {
   font-weight: 400;
 }
 
+footer h7{
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size:40px;
+}
+
 footer p a {
   color: #fff;
   transition: all .3s;
@@ -1863,11 +1871,12 @@ body {
   }
   .main-banner .owl-nav .owl-prev i {
     bottom: 0px;
+    right: 55px;
   }
   .main-banner .owl-nav .owl-next i {
     bottom: 0px;
     position: absolute;
-    left: 65px;
+    left: 75px;
   }
   .services {
     margin-top: 80px;
@@ -2340,3 +2349,495 @@ highlights
   }
 }
 
+/* SP版カルーセルのスタイル再調整 */
+@media (max-width: 767px) {
+  .main-banner .owl-carousel {
+      padding: 0 15px;
+  }
+
+  .main-banner .item {
+      height: auto;
+      padding: 60px 30px;
+      background-image: url(../images/banner-item-01.jpg) !important;
+      background-size: cover;
+      background-position: center;
+      border-radius: 25px;
+      margin: 15px 0;
+  }
+
+  .main-banner .item .header-text {
+      max-width: 100%;
+  }
+
+  .main-banner .item h2 {
+      font-size: 28px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      color: #fff;
+  }
+
+  .main-banner .item p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #fff;
+  }
+
+  .main-banner .item .category {
+      display: inline-block;
+      margin-bottom: 20px;
+  }
+
+  .main-banner .owl-stage-outer {
+      overflow: visible;
+  }
+
+  .main-banner .owl-item {
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+  }
+
+  .main-banner .owl-item.active {
+      opacity: 1;
+  }
+
+  .main-banner .owl-nav {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .main-banner .owl-nav button {
+      width: 40px;
+      height: 40px;
+      background-color: #7a6ad8 !important;
+      color: #fff !important;
+      border-radius: 50%;
+      margin: 0 5px;
+  }
+
+  .main-banner .owl-nav button span {
+      font-size: 24px;
+      line-height: 1;
+  }
+}
+
+/* SP版カルーセルのスライド間隔調整 */
+@media (max-width: 767px) {
+  .main-banner .owl-carousel {
+      padding: 0;
+  }
+
+  .main-banner .owl-stage {
+      padding: 20px 0;
+      display: flex;
+  }
+
+  .main-banner .owl-item {
+      padding: 0 10px;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+  }
+
+  .main-banner .owl-item.active {
+      opacity: 1;
+  }
+
+  .main-banner .item {
+      height: auto;
+      padding: 50px 25px;
+      background-image: url(../images/banner-item-01.jpg) !important;
+      background-size: cover;
+      background-position: center;
+      border-radius: 25px;
+      margin: 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .main-banner .item .header-text {
+      max-width: 100%;
+  }
+
+  .main-banner .item h2 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin-bottom: 15px;
+      color: #fff;
+  }
+
+  .main-banner .item p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #fff;
+  }
+
+  .main-banner .item .category {
+      display: inline-block;
+      margin-bottom: 15px;
+      font-size: 12px;
+  }
+
+  .main-banner .owl-nav {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .main-banner .owl-nav button {
+      width: 35px;
+      height: 35px;
+      background-color: #7a6ad8 !important;
+      color: #fff !important;
+      border-radius: 50%;
+      margin: 0 5px;
+  }
+
+  .main-banner .owl-nav button span {
+      font-size: 20px;
+      line-height: 1;
+  }
+
+  .main-banner .owl-stage-outer {
+      overflow: visible;
+  }
+}
+
+/* SP版のセクション配置調整 */
+@media (max-width: 767px) {
+  /* 攻略のポイントセクション */
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us .container > div:first-child {
+    order: 2;
+  }
+
+  .about-us .container > div:last-child {
+    order: 1;
+  }
+
+  .about-us .section-heading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  /* FAQセクション */
+  .about-us#faq .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us#faq .container > div:first-child {
+    order: 2;
+  }
+
+  .about-us#faq .container > div:last-child {
+    order: 1;
+  }
+
+  .about-us#faq .section-heading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  /* アコーディオンのスタイル調整 */
+  .accordion {
+    margin-top: 30px;
+  }
+
+  /* セクション見出しのスタイル調整 */
+  .section-heading h2 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .section-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* SP版のセクション配置を確実に逆転 */
+@media (max-width: 767px) {
+  /* 攻略のポイントセクション */
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us .container > div:first-child {
+    order: 2;
+  }
+
+  .about-us .container > div:last-child {
+    order: 1;
+  }
+
+  /* FAQセクション */
+  .about-us#faq .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us#faq .container > div:first-child {
+    order: 2;
+  }
+
+  .about-us#faq .container > div:last-child {
+    order: 1;
+  }
+
+  /* アコーディオンと説明文のスタイル調整 */
+  .accordion {
+    margin-top: 30px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+
+  /* 余白の調整 */
+  .about-us, .about-us#faq {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* iPad版カルーセルのスタイル調整 */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-banner .owl-carousel {
+    padding: 0 30px;  /* 左右に余白を追加 */
+  }
+
+  .main-banner .owl-stage {
+    display: flex;
+    padding: 20px 0;  /* 上下に余白を追加 */
+  }
+
+  .main-banner .owl-item {
+    padding: 0 15px;  /* 各アイテムの左右に余白を追加 */
+  }
+
+  .main-banner .item {
+    border-radius: 20px;  /* 角を丸くする */
+    overflow: hidden;  /* 角丸が画像にも適用されるようにする */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* 軽い影をつける */
+  }
+
+  .main-banner .owl-item.active {
+    transform: scale(1.05);  /* アクティブなアイテムを少し大きくする */
+    transition: transform 0.3s ease;
+  }
+
+  /* ナビゲーションボタンのスタイル調整 */
+  .main-banner .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(122, 106, 216, 0.7) !important;
+    border-radius: 50%;
+  }
+
+  .main-banner .owl-nav button.owl-prev {
+    left: 10px;
+  }
+
+  .main-banner .owl-nav button.owl-next {
+    right: 10px;
+  }
+
+  .main-banner .owl-nav button span {
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+  }
+}
+
+/* SP版フッターの整形 */
+@media (max-width: 767px) {
+  footer {
+    margin-top: 60px;
+    padding: 40px 0;
+    background-color: #7a6ad8;
+    border-radius: 30px 30px 0 0;
+  }
+
+  footer .container {
+    padding: 0 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .logo {
+    margin-bottom: 20px;
+  }
+
+  footer .logo img {
+    max-width: 150px;
+    height: auto;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+  }
+
+  footer .social-icons a:hover {
+    opacity: 0.7;
+  }
+
+  footer .footer-links {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+  }
+
+  footer .footer-links a:hover {
+    opacity: 0.7;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+}
+
+/* 共通のフッタースタイル */
+footer {
+  background-color: #7a6ad8;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: opacity 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  opacity: 0.7;
+}
+
+footer .copyright {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* PC版のスタイル */
+@media (min-width: 768px) {
+  footer {
+    border-radius: 150px 150px 0 0;
+  }
+
+  footer .footer-content {
+    flex-direction: row;
+  }
+
+  footer .social-icons {
+    display: flex;
+  }
+
+  footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: opacity 0.3s ease;
+  }
+
+  footer .social-icons a:hover {
+    opacity: 0.7;
+  }
+}
+
+/* SP版のスタイル */
+@media (max-width: 767px) {
+  footer {
+    border-radius: 30px 30px 0 0;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .logo {
+    margin-bottom: 20px;
+  }
+
+  footer .social-icons {
+    margin-bottom: 20px;
+  }
+
+  footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  footer .footer-links {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+  }
+}
