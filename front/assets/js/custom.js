@@ -209,6 +209,11 @@ new WOW().init();
 document.addEventListener('DOMContentLoaded', function() {
 	var animateBoxes = document.querySelectorAll('.team .animate-box, .services .animate-box, .highlights .animate-box');
 	var animateOffset = 150;
+	const isMobile  = function(agent) {
+		return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(agent);
+	};
+
+	  console.log(window.innerWidth)
 
 	function checkAnimation() {
 			animateBoxes.forEach(function(box, index) {
@@ -216,7 +221,8 @@ document.addEventListener('DOMContentLoaded', function() {
 					if (boxTop < window.innerHeight - animateOffset) {
 							setTimeout(function() {
 									box.classList.add('show-animation');
-							}, index * 200); // 200msごとに順番にアニメーション
+							// 
+							}, window.innerWidth < 450 ? 200 : index * 200); // 200msごとに順番にアニメーション
 					}
 			});
 	}
