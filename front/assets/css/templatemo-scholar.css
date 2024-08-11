@@ -1765,6 +1765,14 @@ footer p {
   font-weight: 400;
 }
 
+footer h7{
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size:40px;
+}
+
 footer p a {
   color: #fff;
   transition: all .3s;
@@ -2725,5 +2733,111 @@ highlights
   footer .copyright {
     font-size: 12px;
     opacity: 0.8;
+  }
+}
+
+/* 共通のフッタースタイル */
+footer {
+  background-color: #7a6ad8;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: opacity 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  opacity: 0.7;
+}
+
+footer .copyright {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* PC版のスタイル */
+@media (min-width: 768px) {
+  footer {
+    border-radius: 150px 150px 0 0;
+  }
+
+  footer .footer-content {
+    flex-direction: row;
+  }
+
+  footer .social-icons {
+    display: flex;
+  }
+
+  footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+    transition: opacity 0.3s ease;
+  }
+
+  footer .social-icons a:hover {
+    opacity: 0.7;
+  }
+}
+
+/* SP版のスタイル */
+@media (max-width: 767px) {
+  footer {
+    border-radius: 30px 30px 0 0;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .logo {
+    margin-bottom: 20px;
+  }
+
+  footer .social-icons {
+    margin-bottom: 20px;
+  }
+
+  footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  footer .footer-links {
+    margin-bottom: 20px;
+  }
+
+  footer .footer-links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  footer .copyright {
+    font-size: 12px;
   }
 }
