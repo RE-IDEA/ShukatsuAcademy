@@ -221,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
 					if (boxTop < window.innerHeight - animateOffset) {
 							setTimeout(function() {
 									box.classList.add('show-animation');
+							// 
 							}, window.innerWidth < 450 ? 200 : index * 200); // 200msごとに順番にアニメーション
 					}
 			});
