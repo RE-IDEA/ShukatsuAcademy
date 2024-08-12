@@ -879,7 +879,7 @@ Services Style
 
 .services .service-item {
   position: relative;
-  margin-top: 65px;
+  margin-top: 95px;
 }
 
 .services .service-item .icon {
@@ -902,10 +902,10 @@ Services Style
 
 .services .service-item .main-content {
   border-radius: 25px;
-  padding: 60px 30px 50px 30px;
+  padding: 80px 30px 68px 30px;
   background-color: #f1f0fe;
   margin-bottom: 30px;
-  margin-right: 0px;
+  margin-right: 50px;
   transition: all .4s;
 }
 
@@ -1765,14 +1765,6 @@ footer p {
   font-weight: 400;
 }
 
-footer h7{
-    color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 700;
-    font-size:40px;
-}
-
 footer p a {
   color: #fff;
   transition: all .3s;
@@ -1871,12 +1863,11 @@ body {
   }
   .main-banner .owl-nav .owl-prev i {
     bottom: 0px;
-    right: 55px;
   }
   .main-banner .owl-nav .owl-next i {
     bottom: 0px;
     position: absolute;
-    left: 75px;
+    left: 65px;
   }
   .services {
     margin-top: 80px;
@@ -2226,618 +2217,665 @@ highlights
       transform: translateY(15px); /* 20pxから15pxに変更 */
   }
 }
-
-
-/* レスポンシブ対応のための追加スタイル */
-@media (max-width: 767px) {
-  /* 攻略のポイントセクションの配置を逆にする */
-  .about-us .container {
-      display: flex;
-      flex-direction: column-reverse;
-  }
-  
-  .about-us .section-heading {
-      margin-top: 40px;
-      margin-bottom: 40px;
-  }
-  
-  /* FAQセクションの配置を逆にする */
-  .about-us#faq .container {
-      display: flex;
-      flex-direction: column-reverse;
-  }
-  
-  .about-us#faq .section-heading {
-      margin-top: 40px;
-      margin-bottom: 40px;
-  }
-  
-  /* その他のレスポンシブ調整 */
-  .main-banner .item {
-      padding: 80px 30px 120px 30px;
-  }
-  
-  .main-banner .item h2 {
-      font-size: 28px;
-      line-height: 1.4;
-  }
-  
-  .events_item {
-      margin-bottom: 30px;
-  }
-  
-  .team-member {
-      margin-bottom: 60px;
-  }
-  
-  .contact-us-content {
-      margin-top: 40px;
+@media (max-width: 576px) {
+  .animate-box {
+      transform: translateY(15px); /* 20pxから15pxに変更 */
   }
 }
-
-/* タブレット向けの調整 */
-@media (min-width: 768px) and (max-width: 991px) {
-  .main-banner .item h2 {
-      font-size: 32px;
-  }
-  
-  .events_item {
-      margin-bottom: 30px;
-  }
-  
-  .team-member {
-      margin-bottom: 60px;
-  }
+.point1{
+ order: 1;
 }
 
-/* レスポンシブ対応のための追加スタイル */
-@media (max-width: 767px) {
-  /* 既存のスタイル... */
-
-  /* Webテスト対策セクションのレイアウト調整 */
-  .web-test-items > .col-lg-6 {
-      margin-bottom: 30px;
-  }
-
-  .web-test-items .service-item {
-      height: 100%;
-  }
-
-  .web-test-items .animate-box {
-      margin-bottom: 30px;
-  }
+.point2{
+  order: 2;
 }
 
-/* タブレット向けの調整 */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* 既存のスタイル... */
-
-  /* Webテスト対策セクションのレイアウト調整 */
-  .web-test-items .service-item {
-      height: 100%;
-  }
-
-  .web-test-items .animate-box {
-      margin-bottom: 30px;
-  }
-}
-
-/* PC版のレイアウト維持 */
-@media (min-width: 992px) {
-  .web-test-items {
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  .web-test-items > .col-lg-6 {
-      display: flex;
-      flex-direction: column;
-  }
-
-  .web-test-items .row {
-      flex: 1;
-      display: flex;
-  }
-
-  .web-test-items .animate-box {
-      display: flex;
-      flex: 1;
-  }
-
-  .web-test-items .service-item {
-      height: 100%;
-  }
-}
-
-/* SP版カルーセルのスタイル再調整 */
-@media (max-width: 767px) {
-  .main-banner .owl-carousel {
-      padding: 0 15px;
-  }
-
-  .main-banner .item {
-      height: auto;
-      padding: 60px 30px;
-      background-image: url(../images/banner-item-01.jpg) !important;
-      background-size: cover;
-      background-position: center;
-      border-radius: 25px;
-      margin: 15px 0;
-  }
-
-  .main-banner .item .header-text {
-      max-width: 100%;
-  }
-
-  .main-banner .item h2 {
-      font-size: 28px;
-      line-height: 1.4;
-      margin-bottom: 20px;
-      color: #fff;
-  }
-
-  .main-banner .item p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 25px;
-      color: #fff;
-  }
-
-  .main-banner .item .category {
-      display: inline-block;
-      margin-bottom: 20px;
-  }
-
-  .main-banner .owl-stage-outer {
-      overflow: visible;
-  }
-
-  .main-banner .owl-item {
-      opacity: 0.5;
-      transition: opacity 0.3s ease;
-  }
-
-  .main-banner .owl-item.active {
-      opacity: 1;
-  }
-
-  .main-banner .owl-nav {
-      position: absolute;
-      bottom: -50px;
-      left: 50%;
-      transform: translateX(-50%);
-  }
-
-  .main-banner .owl-nav button {
-      width: 40px;
-      height: 40px;
-      background-color: #7a6ad8 !important;
-      color: #fff !important;
-      border-radius: 50%;
-      margin: 0 5px;
-  }
-
-  .main-banner .owl-nav button span {
-      font-size: 24px;
-      line-height: 1;
-  }
-}
-
-/* SP版カルーセルのスライド間隔調整 */
-@media (max-width: 767px) {
-  .main-banner .owl-carousel {
-      padding: 0;
-  }
-
-  .main-banner .owl-stage {
-      padding: 20px 0;
-      display: flex;
-  }
-
-  .main-banner .owl-item {
-      padding: 0 10px;
-      opacity: 0.5;
-      transition: opacity 0.3s ease;
-  }
-
-  .main-banner .owl-item.active {
-      opacity: 1;
-  }
-
-  .main-banner .item {
-      height: auto;
-      padding: 50px 25px;
-      background-image: url(../images/banner-item-01.jpg) !important;
-      background-size: cover;
-      background-position: center;
-      border-radius: 25px;
-      margin: 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-
-  .main-banner .item .header-text {
-      max-width: 100%;
-  }
-
-  .main-banner .item h2 {
-      font-size: 24px;
-      line-height: 1.3;
-      margin-bottom: 15px;
-      color: #fff;
-  }
-
-  .main-banner .item p {
-      font-size: 14px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      color: #fff;
-  }
-
-  .main-banner .item .category {
-      display: inline-block;
-      margin-bottom: 15px;
-      font-size: 12px;
-  }
-
-  .main-banner .owl-nav {
-      position: absolute;
-      bottom: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-  }
-
-  .main-banner .owl-nav button {
-      width: 35px;
-      height: 35px;
-      background-color: #7a6ad8 !important;
-      color: #fff !important;
-      border-radius: 50%;
-      margin: 0 5px;
-  }
-
-  .main-banner .owl-nav button span {
-      font-size: 20px;
-      line-height: 1;
-  }
-
-  .main-banner .owl-stage-outer {
-      overflow: visible;
-  }
-}
-
-/* SP版のセクション配置調整 */
-@media (max-width: 767px) {
-  /* 攻略のポイントセクション */
-  .about-us .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-us .container > div:first-child {
+@media(max-width: 991px) {
+  .point1{
     order: 2;
+   }
+
+   .point2{
+     order: 1;
+   }
   }
 
-  .about-us .container > div:last-child {
-    order: 1;
-  }
-
-  .about-us .section-heading {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  /* FAQセクション */
-  .about-us#faq .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-us#faq .container > div:first-child {
-    order: 2;
-  }
-
-  .about-us#faq .container > div:last-child {
-    order: 1;
-  }
-
-  .about-us#faq .section-heading {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  /* アコーディオンのスタイル調整 */
-  .accordion {
-    margin-top: 30px;
-  }
-
-  /* セクション見出しのスタイル調整 */
-  .section-heading h2 {
-    font-size: 28px;
-    line-height: 1.4;
-  }
-
-  .section-heading p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-}
-
-/* SP版のセクション配置を確実に逆転 */
+  /* カルーセルの画像間隔調整 */
 @media (max-width: 767px) {
-  /* 攻略のポイントセクション */
-  .about-us .container {
-    display: flex;
-    flex-direction: column;
+  .owl-carousel .owl-item {
+    padding: 0 5px;  /* 左右に5pxの余白を追加 */
   }
 
-  .about-us .container > div:first-child {
-    order: 2;
+  /* SP版の左右マージンを10pxに設定 */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
-  .about-us .container > div:last-child {
-    order: 1;
-  }
-
-  /* FAQセクション */
-  .about-us#faq .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-us#faq .container > div:first-child {
-    order: 2;
-  }
-
-  .about-us#faq .container > div:last-child {
-    order: 1;
-  }
-
-  /* アコーディオンと説明文のスタイル調整 */
-  .accordion {
-    margin-top: 30px;
-  }
-
-  .section-heading {
-    margin-bottom: 30px;
-  }
-
-  /* 余白の調整 */
-  .about-us, .about-us#faq {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-}
-
-/* iPad版カルーセルのスタイル調整 */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main-banner .owl-carousel {
-    padding: 0 30px;  /* 左右に余白を追加 */
-  }
-
-  .main-banner .owl-stage {
-    display: flex;
-    padding: 20px 0;  /* 上下に余白を追加 */
-  }
-
-  .main-banner .owl-item {
-    padding: 0 15px;  /* 各アイテムの左右に余白を追加 */
-  }
-
-  .main-banner .item {
-    border-radius: 20px;  /* 角を丸くする */
-    overflow: hidden;  /* 角丸が画像にも適用されるようにする */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* 軽い影をつける */
-  }
-
-  .main-banner .owl-item.active {
-    transform: scale(1.05);  /* アクティブなアイテムを少し大きくする */
-    transition: transform 0.3s ease;
-  }
-
-  /* ナビゲーションボタンのスタイル調整 */
-  .main-banner .owl-nav button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: rgba(122, 106, 216, 0.7) !important;
-    border-radius: 50%;
-  }
-
-  .main-banner .owl-nav button.owl-prev {
-    left: 10px;
-  }
-
-  .main-banner .owl-nav button.owl-next {
-    right: 10px;
-  }
-
-  .main-banner .owl-nav button span {
-    font-size: 24px;
-    color: #fff;
-    line-height: 40px;
-  }
-}
-
-/* SP版フッターの整形 */
-@media (max-width: 767px) {
+  /* フッターのスタイル調整 */
   footer {
-    margin-top: 60px;
-    padding: 40px 0;
-    background-color: #7a6ad8;
-    border-radius: 30px 30px 0 0;
-  }
-
-  footer .container {
-    padding: 0 20px;
-  }
-
-  footer p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    margin: 0;
   }
 
-  footer .footer-content {
+  footer h7 {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  footer .footer-links {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
   }
 
-  footer .logo {
+  footer .footer-links li {
+    margin: 0 10px;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* セクション間の隙間を調整 */
+  .section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* 特定のセクションの調整 */
+  .main-banner {
     margin-bottom: 20px;
   }
 
-  footer .logo img {
-    max-width: 150px;
+  .services,
+  .about-us,
+  .courses,
+  .team,
+  #highlights,
+  .contact-us {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* セクション見出しの調整 */
+  .section-heading {
+    margin-bottom: 20px;
+  }
+
+  /* アコーディオンセクションの調整 */
+  .accordion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* コンタクトフォームセクションの調整 */
+  .contact-us-content {
+    margin-top: 20px;
+  }
+
+  /* フッターの上部マージン調整 */
+  footer {
+    margin-top: 20px;
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* 各セクションの見出しと小見出しを中央揃えに */
+  .section-heading h2,
+  .section-heading h6 {
+    text-align: center;
+  }
+
+  /* コース紹介のソート部分を1行に収める */
+  .event_filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+
+  .event_filter li {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+
+  .event_filter li a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  /* スクロールバーを非表示にする（オプション） */
+  .event_filter::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .event_filter {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* Webテスト対策セクションの4つの大きなボックス要素間の距離を狭くする */
+  .web-test-items .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .web-test-items .col-lg-6.col-md-12.animate-box {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px; /* ボックス間の縦の距離を10pxに縮小 */
+  }
+
+  /* 2つ目の行の上部マージンを調整 */
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(3),
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(4) {
+    margin-top: 0;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  .web-test-items .col-lg-6.col-md-12.animate-box:last-child {
+    margin-bottom: 0;
+  }
+
+  /* セクション全体の調整 */
+  .web-test-items {
+    margin-bottom: 20px; /* セクション全体の下部マージンも調整 */
+  }
+
+  /* ボックス内のコンテンツの調整（オプション） */
+  .web-test-items .service-item {
+    height: 100%; /* 高さを100%に設定して揃える */
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* Webテスト対策セクション全体の上下の余白を少なくする */
+  .web-test-items {
+    padding-top: 20px;    /* 上の余白を20pxに減らす */
+    padding-bottom: 20px; /* 下の余白を20pxに減らす */
+    margin-top: 10px;     /* 上のマージンを10pxに減らす */
+    margin-bottom: 10px;  /* 下のマージンを10pxに減らす */
+  }
+
+  /* セクションの見出しの余白も調整 */
+  .web-test-items .section-heading {
+    margin-bottom: 15px; /* 見出しの下のマージンを15pxに減らす */
+  }
+
+  /* ボックス要素間の距離は前回の設定を維持 */
+  .web-test-items .row {
+    margin-left: -2px;
+    margin-right: -2px;
+  }
+
+  .web-test-items .col-lg-6.col-md-12.animate-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 4px;
+  }
+
+  /* 2つ目の行の上部マージンを維持 */
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(3),
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(4) {
+    margin-top: 4px;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  .web-test-items .col-lg-6.col-md-12.animate-box:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ボックス要素の高さを自動に設定 */
+  .web-test-items .col-lg-6.col-md-12.animate-box {
     height: auto;
   }
 
-  footer .social-icons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  footer .social-icons a {
-    color: #fff;
-    font-size: 20px;
-    margin: 0 10px;
-    transition: opacity 0.3s ease;
-  }
-
-  footer .social-icons a:hover {
-    opacity: 0.7;
-  }
-
-  footer .footer-links {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  footer .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
-    transition: opacity 0.3s ease;
-  }
-
-  footer .footer-links a:hover {
-    opacity: 0.7;
-  }
-
-  footer .copyright {
-    font-size: 12px;
-    opacity: 0.8;
+  /* ボックス内のコンテンツの高さ調整 */
+  .web-test-items .service-item {
+    height: 100%;
   }
 }
 
-/* 共通のフッタースタイル */
-footer {
-  background-color: #7a6ad8;
-  color: #fff;
-  padding: 40px 0;
-  margin-top: 60px;
-}
+/* 前回までの変更内容は維持 */
 
-footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .logo img {
-  max-width: 150px;
-  height: auto;
-}
-
-footer .footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
-  transition: opacity 0.3s ease;
-}
-
-footer .footer-links a:hover {
-  opacity: 0.7;
-}
-
-footer .copyright {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-/* PC版のスタイル */
-@media (min-width: 768px) {
-  footer {
-    border-radius: 150px 150px 0 0;
-  }
-
-  footer .footer-content {
-    flex-direction: row;
-  }
-
-  footer .social-icons {
-    display: flex;
-  }
-
-  footer .social-icons a {
-    color: #fff;
-    font-size: 20px;
-    margin-left: 15px;
-    transition: opacity 0.3s ease;
-  }
-
-  footer .social-icons a:hover {
-    opacity: 0.7;
-  }
-}
-
-/* SP版のスタイル */
 @media (max-width: 767px) {
-  footer {
-    border-radius: 30px 30px 0 0;
+  /* 前回までの変更内容は維持 */
+
+  /* Webテスト対策セクションのボックス間の距離をさらに狭くする */
+  .web-test-items .row {
+    margin-left: -2px;
+    margin-right: -2px;
   }
 
-  footer .footer-content {
-    flex-direction: column;
-    text-align: center;
+  .web-test-items .col-lg-6.col-md-12.animate-box {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 4px; /* ボックス間の縦の距離をさらに縮小 */
   }
 
-  footer .logo {
-    margin-bottom: 20px;
+  /* 2つ目の行の上部マージンを調整 */
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(3),
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(4) {
+    margin-top: 4px; /* 上の行とのマージンも4pxに */
   }
 
-  footer .social-icons {
-    margin-bottom: 20px;
+  /* 最後の要素のマージンを削除 */
+  .web-test-items .col-lg-6.col-md-12.animate-box:last-child {
+    margin-bottom: 0;
   }
 
-  footer .social-icons a {
-    color: #fff;
-    font-size: 20px;
-    margin: 0 10px;
+  /* セクション全体の調整 */
+  .web-test-items {
+    margin-bottom: 15px; /* セクション全体の下部マージンは維持 */
   }
 
-  footer .footer-links {
-    margin-bottom: 20px;
+  /* ボックス要素の高さを自動に設定 */
+  .web-test-items .col-lg-6.col-md-12.animate-box {
+    height: auto;
   }
 
-  footer .footer-links a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  footer .copyright {
-    font-size: 12px;
+  /* ボックス内のコンテンツには影響を与えない */
+  .web-test-items .service-item {
+    height: 100%; /* ボックス内のコンテンツが高さいっぱいに広がるように */
   }
 }
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* Webテスト対策セクションとアカデミーの特徴セクションのボックス間の距離を狭くする */
+  .web-test-items .row,
+  #features .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .web-test-items .col-lg-6.col-md-12.animate-box,
+  #features .col-lg-3.col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px; /* ボックス間の縦の距離を10pxに縮小 */
+  }
+
+  /* 2つ目の行の上部マージンを調整 */
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(3),
+  .web-test-items .row > .col-lg-6.col-md-12.animate-box:nth-child(4),
+  #features .row > .col-lg-3.col-md-6:nth-child(3),
+  #features .row > .col-lg-3.col-md-6:nth-child(4) {
+    margin-top: 0;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  .web-test-items .col-lg-6.col-md-12.animate-box:last-child,
+  #features .col-lg-3.col-md-6:last-child {
+    margin-bottom: 0;
+  }
+
+  /* セクション全体の調整 */
+  .web-test-items,
+  #features {
+    margin-bottom: 20px; /* セクション全体の下部マージンも調整 */
+  }
+
+  /* ボックス要素の高さを自動に設定 */
+  .web-test-items .col-lg-6.col-md-12.animate-box,
+  #features .col-lg-3.col-md-6 {
+    height: auto;
+  }
+
+  /* アカデミーの特徴セクションの追加調整 */
+  #features .team-member.animate-box {
+    margin-bottom: 10px; /* ボックス間の縦の距離を10pxに縮小 */
+  }
+
+  #features .row > .col-lg-3.col-md-6:last-child .team-member.animate-box {
+    margin-bottom: 0; /* 最後の要素のマージンを削除 */
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* アカデミーの特徴セクションのボックスサイズ調整 */
+  #features .team-member.animate-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  #features .team-member.animate-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  #features .team-member.animate-box .main-content {
+    text-align: center;
+    width: 100%;
+  }
+
+  #features .team-member.animate-box .main-content span.category {
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  #features .team-member.animate-box .main-content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  #features .team-member.animate-box .main-content p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
+  /* ボックス間の距離調整 */
+  #features .col-lg-3.col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #features .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  #features .team-member.animate-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* アカデミーの特徴セクションのボックスサイズ調整 */
+  #features .team-member.animate-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  #features .team-member.animate-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 5px; /* 画像の下部マージンを5pxに減らす */
+  }
+
+  #features .team-member.animate-box .main-content {
+    text-align: center;
+    width: 100%;
+    padding-top: 0; /* 上部のパディングを削除 */
+  }
+
+  #features .team-member.animate-box .main-content span.category {
+    font-size: 12px;
+    margin-bottom: 2px; /* カテゴリーの下部マージンを2pxに減らす */
+    display: block;
+  }
+
+  #features .team-member.animate-box .main-content h4 {
+    font-size: 16px;
+    margin-top: 0; /* 上部マージンを削除 */
+    margin-bottom: 3px; /* 下部マージンを3pxに減らす */
+  }
+
+  #features .team-member.animate-box .main-content p {
+    font-size: 14px;
+    line-height: 1.3; /* 行間を少し縮める */
+    margin-top: 0; /* 上部マージンを削除 */
+    margin-bottom: 0;
+  }
+
+  /* ボックス間の距離調整 */
+  #features .col-lg-3.col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #features .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  #features .team-member.animate-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* アカデミーの特徴セクションのボックスサイズ調整 */
+  #features .team-member.animate-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  #features .team-member.animate-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 12px; /* 画像の下部マージンを12pxに増やす */
+  }
+
+  #features .team-member.animate-box .main-content {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px; /* 上部に少しパディングを追加 */
+  }
+
+  #features .team-member.animate-box .main-content span.category {
+    font-size: 12px;
+    margin-bottom: 5px; /* カテゴリーの下部マージンを5pxに増やす */
+    display: block;
+  }
+
+  #features .team-member.animate-box .main-content h4 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 8px; /* タイトルの下部マージンを8pxに増やす */
+  }
+
+  #features .team-member.animate-box .main-content p {
+    font-size: 14px;
+    line-height: 1.4; /* 行間を少し広げる */
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* ボックス間の距離調整 */
+  #features .col-lg-3.col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #features .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  #features .team-member.animate-box:last-child {
+    margin-bottom: 0;
+  }
+}
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* アカデミーの特徴セクションのボックスサイズ調整 */
+  #features .col-lg-3.col-md-6 {
+    width: 100%; /* 1列のレイアウトに変更 */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #features .team-member.animate-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* ボックスの幅を100%に設定 */
+  }
+
+  #features .team-member.animate-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  #features .team-member.animate-box .main-content {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px; /* 文章を少し下にずらす */
+  }
+
+  #features .team-member.animate-box .main-content span.category {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  #features .team-member.animate-box .main-content h4 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #features .team-member.animate-box .main-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  #features .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  #features .team-member.animate-box:last-child {
+    margin-bottom: 0;
+  }
+}
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* アカデミーの特徴セクションのボックスサイズ調整 */
+  #features .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #features .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  #features .col-lg-3.col-md-6 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #features .team-member.animate-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px; /* 左右のパディングを増やす */
+    margin-bottom: 20px;
+    width: 100vw; /* ビューポートの幅いっぱいに設定 */
+    margin-left: calc(-50vw + 50%); /* 画面中央揃え */   
+  }
+
+  #features .team-member.animate-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  #features .team-member.animate-box .main-content {
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  #features .team-member.animate-box .main-content span.category {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  #features .team-member.animate-box .main-content h4 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #features .team-member.animate-box .main-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* 最後の要素のマージンを削除 */
+  #features .team-member.animate-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
