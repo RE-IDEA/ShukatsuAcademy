@@ -61,6 +61,7 @@ body {
 @media (max-width: 767px) {
   .header-area .main-nav .logo h1 {
       font-size: 18px;
+      margin-top: 10px;
   }
 
   .main-banner .item h2 {
