@@ -3551,4 +3551,82 @@ footer p {
   }
 }
 
+/* 既存のスタイルは維持しつつ、新しいスタイルを追加 */
+.expandable-box {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
 
+.expandable-box .expanded-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.expandable-box.expanded {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.expandable-box.expanded .expanded-content {
+    max-height: 300px; /* 必要に応じて調整 */
+    padding: 20px;
+}
+
+.expanded-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.expanded-content li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.expanded-content .main-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #7a6ad8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.expanded-content .main-button:hover {
+    background-color: #6557c3;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 767px) {
+    .expandable-box.expanded {
+        transform: scale(1.02);
+    }
+
+    .expanded-content {
+        font-size: 14px;
+    }
+
+    .expanded-content .main-button {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+}
+
+/* タブレット用のスタイル */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .expandable-box.expanded {
+        transform: scale(1.03);
+    }
+}
