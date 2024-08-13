@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
-EXPOSE 5005
+EXPOSE 5000
 
 # アプリケーションの起動コマンド
 CMD [ "npm", "start" ]

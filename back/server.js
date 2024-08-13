@@ -5,7 +5,11 @@ const { google } = require('googleapis');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const port = 5005;
+const port = 5000;
+// CORSミドルウェアを適用
+app.use(cors({origin:["https://www.shukatsu-academy.com", ]}));
+// これCORSエラー
+app.use(express.json())
 
 
 const KEYFILE_NAME = `keyfile.json`;
@@ -51,8 +55,6 @@ const transporter = nodemailer.createTransport({
 });
 
 
-// CORSミドルウェアを適用
-app.use(cors());
 // body-parserミドルウェアを使用してリクエストボディをパースする
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
