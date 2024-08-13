@@ -1821,7 +1821,7 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .header-area .main-nav #search input,
   .header-area .main-nav #search i {
     display: none;
@@ -1885,7 +1885,7 @@ body {
   }
   .about-us .section-heading {
     margin-left: 0px;
-    margin-top: 120px;
+    margin-top: -50px;
   }
   .about-us::before,
   .testimonials::before,
@@ -1987,7 +1987,7 @@ body {
   }
   .contact-us .special-offer {
     background-color: #f1f0fe;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 34px 30px 34px 100px;
     width: 100%;
   }
@@ -2129,7 +2129,7 @@ highlights
   margin-top: 0px;
   transition: all 0.5s;
 }
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .highlights-item {
     margin-bottom: 45px;
   }
@@ -2230,7 +2230,7 @@ highlights
   order: 2;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 767px) {
   .point1{
     order: 2;
    }
@@ -2879,3 +2879,560 @@ highlights
   }
 }
 
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* 全体のページ：各セクション間の距離を20pxで統一 */
+  .section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* アカデミーの特徴セクション：ボックスに重なる画像を見出しのh4と被らないように調整 */
+  #features .team-member.animate-box {
+    padding-top: 0px;  /* 画像の高さ分の余白を確保 */
+    position: relative;
+  }
+
+  #features .team-member.animate-box img {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+  }
+
+  #features .team-member.animate-box .main-content {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  #features .team-member.animate-box .main-content h4 {
+    margin-top: 10px;
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* 攻略のポイントセクションの調整 */
+  #web-tests + .about-us {
+    margin-top: 40px; /* IMGESの記載から20px下に配置 */
+  }
+
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us .point2 {
+    order: 1; /* セクションの見出しを上に */
+  }
+
+  .about-us .point1 {
+    order: 2; /* アコーディオンを中央に */
+    margin-top: 20px;
+  }
+
+  .about-us .row:last-child {
+    order: 3; /* 「98%の受講生が...」を下に */
+    margin-top: 20px;
+  }
+
+  .about-us .main-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* 攻略のポイントセクションの調整 */
+  #web-tests + .about-us {
+    margin-top: 20px; /* IMGESの記載から20px下に配置 */
+  }
+
+  /* よくある質問セクションの調整 */
+  #highlights + #faq {
+    margin-top: 90px; /* 前のセクションボックスの下20pxに配置 */
+  }
+
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us .point2 {
+    order: 1; /* セクションの見出しを上に */
+  }
+
+  .about-us .point1 {
+    order: 2; /* アコーディオンを中央に */
+    margin-top: 20px;
+  }
+
+  .about-us .row:last-child {
+    order: 3; /* 「98%の受講生が...」や「今なら初回カウンセリングが無料！」を下に */
+    margin-top: 20px;
+  }
+
+  .about-us .main-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* セクション間の距離調整 */
+  .section {
+    margin-top: 26px;
+    margin-bottom: 20px;
+  }
+}
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* 攻略のポイントセクションの調整 */
+  .about-us .row:last-child {
+    order: 3;
+    margin-top: 20px;
+    padding-left: 15px;  /* 左側の隙間を調整 */
+    padding-right: 15px; /* 右側の隙間を調整 */
+  }
+
+  /* よくある質問セクションの調整 */
+  #faq .row:last-child {
+    padding-left: 15px;  /* 左側の隙間を調整 */
+    padding-right: 15px; /* 右側の隙間を調整 */
+  }
+
+  /* セクション見出し下の段落のパディングを統一 */
+  .about-us .section-heading p,
+  #faq .section-heading p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* ボタンのセンタリングを維持 */
+  .about-us .main-button,
+  #faq .main-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* 前回までの変更内容は維持 */
+
+@media (max-width: 767px) {
+  /* 前回までの変更内容は維持 */
+
+  /* お問い合わせフォームの調整 */
+  .contact-us-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us-content form button {
+    margin-top: 15px;
+  }
+
+  /* フッターのスタイリング */
+  footer {
+    padding: 15px 0;
+    height: auto;
+    line-height: 1.5;
+  }
+
+  footer * {
+    color: white !important;
+  }
+
+  footer h7 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  footer .footer-links {
+    margin-bottom: 10px;
+  }
+
+  footer .footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  footer .copyright {
+    font-size: 12px;
+  }
+}
+/* 共通スタイル */
+.about-us .container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* PC版とタブレット版のスタイル（768px以上） */
+@media (min-width: 768px) {
+  .about-us .container {
+    flex-direction: row;
+  }
+
+  .about-us .point2 {
+    order: 2;
+  }
+
+  .about-us .point1 {
+    order: 1;
+  }
+
+  .about-us .additional-content {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* SP版のスタイル（767px以下） */
+@media (max-width: 767px) {
+  .about-us .point2 {
+    order: 1;
+  }
+
+  .about-us .point1 {
+    order: 2;
+  }
+
+  .about-us .additional-content {
+    order: 3;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .about-us .main-button,
+  #faq .main-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* タブレット版の微調整（768px〜991px） */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-us .container > .row {
+    flex-wrap: wrap;
+  }
+
+  .about-us .point1,
+  .about-us .point2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-us .point2 {
+    margin-top: 20px;
+  }
+}
+/* 既存のスタイル */
+
+/* フッターの高さ調整 */
+footer {
+  margin-top: 100px; /* 上のマージンも少し減らします */
+  min-height: 100px; /* 最小の高さを100pxに設定 */
+  padding: 20px 0; /* 上下のパディングを追加してコンテンツの余白を確保 */
+}
+
+footer p {
+  line-height: normal; /* line-heightを通常に戻す */
+}
+
+/* SP版のレイアウト変更（767px以下） */
+@media (max-width: 767px) {
+  footer {
+    margin-top: 50px; /* SP版ではさらにマージンを減らす */
+    padding: 15px 0;
+  }
+
+  footer h7 {
+    font-size: 16px; /* フォントサイズを少し小さくする */
+    margin-bottom: 8px;
+  }
+
+  footer .footer-links {
+    margin-bottom: 8px;
+  }
+
+  footer .footer-links li {
+    margin: 0 8px;
+  }
+
+  footer .copyright {
+    font-size: 11px;
+  }
+}
+
+/* 他の既存のスタイル */
+
+/* 既存のスタイル */
+
+/* SP版のレイアウト変更（767px以下） */
+@media (max-width: 767px) {
+  /* 既存のSP版スタイル */
+
+  /* 攻略のポイントセクションのレイアウト調整 */
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us .point2 {
+    order: 1;
+  }
+
+  .about-us .point2 > p:first-of-type {
+    order: 2;
+  }
+
+  .about-us .point1 {
+    order: 3;
+  }
+
+  .about-us .point2 > p:last-of-type,
+  .about-us .point2 > .main-button {
+    order: 4;
+  }
+
+  .about-us .accordion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about-us .point2 > p:last-of-type {
+    margin-top: 20px;
+  }
+
+  .about-us .main-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+/* 他の既存のスタイル */
+
+/* 既存のスタイル */
+
+/* SP版のみに表示するコンテンツを非表示にする（デフォルト） */
+.sp-only-content {
+  display: none;
+}
+
+/* SP版のレイアウト変更（767px以下） */
+@media (max-width: 767px) {
+  /* 既存のSP版スタイル */
+
+  /* 攻略のポイントセクションのレイアウト調整 */
+  .about-us .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us .point2 {
+    order: 1;
+  }
+
+  .about-us .point1 {
+    order: 2;
+  }
+
+  .about-us .sp-only-content {
+    display: block;
+    order: 3;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-us .sp-only-content p {
+    margin-bottom: 15px;
+  }
+
+  .about-us .sp-only-content .main-button {
+    margin-top: 15px;
+  }
+
+  .about-us .accordion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* 他の既存のスタイル */
+/* 既存のスタイル */
+
+/* PC版のみに表示するコンテンツ（デフォルト表示） */
+.pc-only-content {
+  display: block;
+}
+
+/* SP版のみに表示するコンテンツを非表示にする（デフォルト） */
+.sp-only-content {
+  display: none;
+}
+
+/* SP版のレイアウト変更（767px以下） */
+@media (max-width: 767px) {
+  /* 既存のSP版スタイル */
+
+  /* PC版コンテンツを非表示 */
+  .pc-only-content {
+    display: none;
+  }
+
+  /* SP版コンテンツを表示 */
+  .sp-only-content {
+    display: block;
+    order: 3;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* 他の既存のSP版スタイル */
+}
+
+/* 他の既存のスタイル */
+
+/* 既存のスタイル */
+
+/* PC版のみに表示するコンテンツ（デフォルト表示） */
+.pc-only-content {
+  display: block;
+}
+
+/* SP版のみに表示するコンテンツを非表示にする（デフォルト） */
+.sp-only-content {
+  display: none;
+}
+
+/* SP版のレイアウト変更（767px以下） */
+@media (max-width: 767px) {
+  /* 既存のSP版スタイル */
+
+  /* PC版コンテンツを非表示 */
+  .pc-only-content {
+    display: none;
+  }
+
+  /* SP版コンテンツを表示 */
+  .sp-only-content {
+    display: block;
+    order: 3;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* FAQセクションのレイアウト調整 */
+  #faq .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #faq .point2 {
+    order: 1;
+  }
+
+  #faq .point1 {
+    order: 2;
+  }
+
+  #faq .sp-only-content {
+    order: 3;
+  }
+
+  #faq .accordion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* 他の既存のSP版スタイル */
+}
+
+/* 他の既存のスタイル */
+
+@media (max-width: 767px) {
+  /* Webテスト対策セクションの調整 */
+  #web-tests .web-test-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #web-tests .col-lg-6.col-md-12 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #web-tests .service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin: -30px 5px;
+  }
+
+  #web-tests .service-item .icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    flex-shrink: 0;
+    top: -20px;
+  }
+
+  #web-tests .service-item .icon img{
+    margin-top:-83px;
+    width: 60%;
+  }
+
+  #web-tests .service-item .main-content {
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px;
+    margin-right:0px;
+  }
+
+  #web-tests .service-item .main-content h4 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+
+  #web-tests .service-item .main-content p {
+    font-size: 12px;
+    line-height: 1.3;
+    margin: 0 0 5px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  #web-tests .service-item .main-button {
+    margin-top: 5px;
+  }
+
+  #web-tests .service-item .main-button a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
