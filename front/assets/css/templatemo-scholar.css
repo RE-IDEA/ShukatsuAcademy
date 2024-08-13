@@ -1555,7 +1555,8 @@ Contact Style
 }
 
 .contact-us .special-offer {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #fff;
   border-radius: 25px;
   padding: 30px 120px;
@@ -3055,6 +3056,7 @@ highlights
 
   footer * {
     color: white !important;
+    font-size: 14px;
   }
 
   footer h7 {
@@ -3153,6 +3155,8 @@ footer {
 
 footer p {
   line-height: normal; /* line-heightを通常に戻す */
+  font-size: 8px;
+  margin-top: 8px;
 }
 
 /* SP版のレイアウト変更（767px以下） */
@@ -3436,3 +3440,115 @@ footer p {
     padding: 5px 10px;
   }
 }
+
+@media (min-width: 768px) {
+  footer {
+    background-color: #7a6ad8;
+    padding: 40px 0;
+    color: #fff;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo h3 {
+    font-size: 24px;
+    margin: 30px 0px;
+    color: #fff;
+  }
+
+  .footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    text-align: right;
+  }
+
+  .footer-menu ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* 攻略のポイントセクションとよくある質問セクション共通 */
+  .about-us .container,
+  #faq .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us .point2,
+  #faq .point2 {
+    order: 1;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-us .point1,
+  #faq .point1 {
+    order: 2;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-us .additional-content,
+  #faq .additional-content {
+    order: 3;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* アコーディオンの調整 */
+  .accordion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* セクション見出しの調整 */
+  .section-heading {
+    text-align: center;
+  }
+
+  /* ボタンのセンタリング */
+  .about-us .main-button,
+  #faq .main-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  /* SP版のみ表示するコンテンツを表示 */
+  .sp-only-content {
+    display: block;
+    order: 3;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* PC版のみ表示するコンテンツを非表示 */
+  .pc-only-content {
+    display: none;
+  }
+}
+
+
