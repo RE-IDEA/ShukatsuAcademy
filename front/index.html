@@ -395,44 +395,6 @@
 </section>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const boxes = document.querySelectorAll('.expandable-box');
-    
-    boxes.forEach(box => {
-        box.addEventListener('click', function(e) {
-            // 申し込むボタンがクリックされた場合、ボックスの開閉を防ぐ
-            if (e.target.classList.contains('main-button')) {
-                e.stopPropagation();
-                return;
-            }
-
-            // イベントのデフォルトの挙動を防ぐ
-            e.preventDefault();
-    
-            this.classList.toggle('expanded');
-            
-            // 他のボックスを閉じる
-            boxes.forEach(otherBox => {
-                if (otherBox !== this) {
-                    otherBox.classList.remove('expanded');
-                }
-            });
-        });
-    });
-
-    // 画像リンクのクリックイベント
-    const imageLinks = document.querySelectorAll('.event-image-link');
-    imageLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            this.closest('.expandable-box').classList.toggle('expanded');
-        });
-    });
-});
-</script>
-
-<script>
     document.addEventListener('DOMContentLoaded', function() {
         const boxes = document.querySelectorAll('.expandable-box');
         const filterButtons = document.querySelectorAll('.event_filter li a');
@@ -494,10 +456,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
                 // フィルタリングを適用
                 boxes.forEach(box => {
-                    if (filter === '*' || box.classList.contains(filter.substring(1))) {
-                        box.closest('.event_outer').style.display = '';
+                    const outerBox = box.closest('.event_outer');
+                    if (filter === '*') {
+                        outerBox.style.display = '';
+                    } else if (outerBox.classList.contains(filter.substring(1))) {
+                        outerBox.style.display = '';
                     } else {
-                        box.closest('.event_outer').style.display = 'none';
+                        outerBox.style.display = 'none';
                     }
                 });
             });
