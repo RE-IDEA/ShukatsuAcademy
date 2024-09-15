@@ -128,9 +128,6 @@
                             <div class="main-content">
                                 <h4>SPI(言語)</h4>
                                 <p>多くの企業で用いられる言語能力を測定するテスト。語彙、文法・読解、論理的思考力が求められ素早い解答が必要です。</p>
-                                <div class="main-button">
-                                    <a href="#spi">詳細を見る</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,9 +139,6 @@
                             <div class="main-content">
                                 <h4>SPI(非言語)</h4>
                                 <p>主に数学的な素養を問う汎用的なテスト。時間が短く出題範囲も幅広いので、様々な解法の理解とそれを素早く引き出す力が必要です。</p>
-                                <div class="main-button">
-                                    <a href="#tamatebako">詳細を見る</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -160,9 +154,6 @@
                             <div class="main-content">
                                 <h4>玉手箱・GAB<br>(非言語)</h4>
                                 <p>数的処理能力や論理的思考力を測るテスト。計算、図表の読み取り、図形の3分野で構成されており、高い処理能力が必要です。</p>
-                                <div class="main-button">
-                                    <a href="#gab">詳細を見る</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,9 +165,6 @@
                             <div class="main-content">
                                 <h4>プログラミング</h4>
                                 <p>IT系の職種等に必要な論理的思考力やコーディング能力が問われるWebテスト。プログラミングの基礎の理解やアルゴリズムの知識が必要です。</p>
-                                <div class="main-button">
-                                    <a href="#images">詳細を見る</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -316,7 +304,7 @@
                     </div>
                     <div class="expanded-content">
                         <p><strong>1講座：4コマ(60分)<br>期間: 4週間〜(最大6ヶ月)<br>受講形式：オンライン個別指導</strong><br>SPIの言語分野を対策するコースです。問題演習を通じて解答のコツや考え方を理解し、高得点を目指します。<br>※オプション：1講座追加/6000円</p>
-                        <a href="#contact" class="main-button">申し込む</a>
+                        <a href="#signup" class="main-button">申し込む</a>
                     </div>
                 </div>
             </div>
@@ -334,7 +322,7 @@
                     </div>
                     <div class="expanded-content">
                         <p><strong>1講座：4コマ(60分)<br>期間: 4週間〜(最大6ヶ月)<br>受講形式：オンライン個別指導</strong><br>SPIの非言語分野を対策するコースです。演習を通して広い出題範囲を網羅することで、様々な解法の理解と素早く解く力を養成します。<br>※オプション：1講座追加/6000円</p>
-                        <a href="#contact" class="main-button">申し込む</a>
+                        <a href="#signup" class="main-button">申し込む</a>
                     </div>
                 </div>
             </div>
@@ -351,7 +339,7 @@
                     </div>
                     <div class="expanded-content">
                         <p><strong>1講座：4コマ(60分)<br>期間: 4週間〜(最大6ヶ月)<br>受講形式：オンライン個別指導</strong><br>玉手箱・GABの非言語分野を対策するコースです。出題範囲をバランスよく学習することで、素早い解答のコツや思考力、数的処理能力の向上を目指します。<br>※オプション：1講座追加/6000円</p>
-                        <a href="#contact" class="main-button">申し込む</a>
+                        <a href="#signup" class="main-button">申し込む</a>
                     </div>
                 </div>
             </div>
@@ -368,7 +356,7 @@
                     </div>
                     <div class="expanded-content">
                         <p><strong>1講座：4コマ(60分)<br>期間: 4週間〜(最大6ヶ月)<br>受講形式：オンライン個別指導</strong><br>プログラミングテストを対策するコースです。プログラミングの基礎やアルゴリズムを復習することで論理的思考力やコーディング能力を養います。<br>※オプション：1講座追加/6000円</p>
-                        <a href="#contact" class="main-button">申し込む</a>
+                        <a href="#signup" class="main-button">申し込む</a>
                     </div>
                 </div>
             </div>
@@ -740,29 +728,149 @@
         });
     </script>
 
+<script src="assets/js/sp-expand.js"></script>
+
     </body>
     </html>
 
+<!-- 申し込みセクション -->
+<div class="signup-section section" id="signup">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                    <h6>申し込み</h6>
+                    <h2>コース申し込み</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-container">
+                    <form id="signup-form" action="submit-signup.php" method="post">
+                        <div class="mb-3">
+                            <label for="course-select" class="form-label">コース選択</label>
+                            <select class="form-control" id="course-select" name="course" required>
+                                <option value="">コースを選択してください</option>
+                                <option value="spi-language">SPI言語対策コース</option>
+                                <option value="spi-nonlanguage">SPI非言語対策コース</option>
+                                <option value="tamatebako-gab">玉手箱・GAB対策コース</option>
+                                <option value="programming">プログラミング対策コース</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">お名前</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">メールアドレス</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">電話番号</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="preferred-date" class="form-label">希望開始日</label>
+                            <input type="date" class="form-control" id="preferred-date" name="preferred-date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">その他ご要望</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">申し込む</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const courseInfo = {
+    'spi-language': {
+        title: 'SPI言語対策コース',
+        description: 'SPIの言語分野を対策するコースです。問題演習を通じて解答のコツや考え方を理解し、高得点を目指します。',
+        details: [
+            '1講座：4コマ(60分)',
+            '期間: 4週間〜(最大6ヶ月)',
+            '受講形式：オンライン個別指導',
+            '料金：30,000円（オプション：1講座追加/6000円）'
+        ]
+    },
+    'spi-nonlanguage': {
+        title: 'SPI非言語対策コース',
+        description: 'SPIの非言語分野を対策するコースです。演習を通して広い出題範囲を網羅することで、様々な解法の理解と素早く解く力を養成します。',
+        details: [
+            '1講座：4コマ(60分)',
+            '期間: 4週間〜(最大6ヶ月)',
+            '受講形式：オンライン個別指導',
+            '料金：30,000円（オプション：1講座追加/6000円）'
+        ]
+    },
+    'tamatebako-gab': {
+        title: '玉手箱・GAB対策コース',
+        description: '玉手箱・GABの非言語分野を対策するコースです。出題範囲をバランスよく学習することで、素早い解答のコツや思考力、数的処理能力の向上を目指します。',
+        details: [
+            '1講座：4コマ(60分)',
+            '期間: 4週間〜(最大6ヶ月)',
+            '受講形式：オンライン個別指導',
+            '料金：30,000円（オプション：1講座追加/6000円）'
+        ]
+    },
+    'programming': {
+        title: 'プログラミング対策コース',
+        description: 'プログラミングテストを対策するコースです。プログラミングの基礎やアルゴリズムを復習することで論理的思考力やコーディング能力を養います。',
+        details: [
+            '1講座：4コマ(60分)',
+            '期間: 4週間〜(最大6ヶ月)',
+            '受講形式：オンライン個別指導',
+            '料金：30,000円（オプション：1講座追加/6000円）'
+        ]
+    }
+};
+
+document.getElementById('course-select').addEventListener('change', function() {
+    const selectedCourse = this.value;
+    const courseData = courseInfo[selectedCourse];
+
+    if (courseData) {
+        document.getElementById('selected-course-title').textContent = courseData.title;
+        document.getElementById('selected-course-description').textContent = courseData.description;
+        const detailsList = document.getElementById('selected-course-details');
+        detailsList.innerHTML = '';
+        courseData.details.forEach(detail => {
+            const li = document.createElement('li');
+            li.textContent = detail;
+            detailsList.appendChild(li);
+        });
+    } else {
+        document.getElementById('selected-course-title').textContent = 'コースを選択してください';
+        document.getElementById('selected-course-description').textContent = '';
+        document.getElementById('selected-course-details').innerHTML = '';
+    }
+});
+</script>
+
     <footer>
         <div class="container">
-          <div class="footer-content">
-            <div class="footer-logo">
-              <h3>就活テストAcademy</h3>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>就活テストAcademy</h3>
+                </div>
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="#top">トップ</a></li>
+                        <li><a href="#services">サービス内容</a></li>
+                        <li><a href="#faq">よくある質問</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="footer-menu">
-              <ul>
-                <li><a href="#">トップ</a></li>
-                <li><a href="#services">サービス内容</a></li>
-                <li><a href="#faq">よくある質問</a></li>
-              </ul>
+            <div class="footer-size-sp">
+                <div class="copyright">
+                    <p>Copyright © 2024 就活テストAcademy. <br>All rights reserved.</p>
+                </div>
             </div>
         </div>
-          </div>
-          <div class="footer-size-sp">
-          <div class="copyright">
-            <p>Copyright © 2023 就活テストAcademy. <br>All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+    </footer>
 
-      
